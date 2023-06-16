@@ -8,8 +8,8 @@ YW="\e[93m"
 
     echo -e "\n- Installing nuclei"
      #"GO111MODULE=on go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest > /dev/null 2>&1 && ln -s ~/go/bin/nuclei /usr/local/bin/;"
-  wget https://github.com/projectdiscovery/nuclei/releases/download/v2.9.6/nuclei_2.9.6_linux_arm64.zip
-  unzip nuclei_2.9.6_linux_arm64.zip
+  wget https://github.com/projectdiscovery/nuclei/releases/download/v2.9.6/nuclei_2.9.6_linux_arm64.zip > /dev/null 2>&1
+  unzip nuclei_2.9.6_linux_arm64.zip > /dev/null 2>&1
   chmod +x nuclei
   mv nuclei /usr/bin/
   rm nuclei_2.9.6_linux_arm64.zip
@@ -24,8 +24,8 @@ fi
     cd ~
     echo -e "\n- Installing findomain"
     apt install unzip -y
-    wget https://github.com/Findomain/Findomain/releases/download/9.0.0/findomain-aarch64.zip
-    unzip findomain-aarch64.zip
+    wget https://github.com/Findomain/Findomain/releases/download/9.0.0/findomain-aarch64.zip > /dev/null 2>&1
+    unzip findomain-aarch64.zip > /dev/null 2>&1
     chmod +x findomain
     mv findomain /usr/bin/
     rm findomain-aarch64.zip
